@@ -1,3 +1,4 @@
+/* Moved main font-family here to clean code */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -12,9 +13,13 @@ body {
 
 .header {
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
+}
+
+/* Text override */
+.header .footer {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
 }
 
 .header h1 {
@@ -97,19 +102,20 @@ p {
     text-align: center;
 }
 
+/* Centered text */
 .sidecontent p {
     text-align: center;
     margin-bottom: 40px;
 }
 
-/* Consolidated 3 lines */
+/* Consolidated, adjusted max-width */
 .sidecontent img {
     display: block;
     margin: auto;
     max-width: 130px;
 }
 
-/* Consolidated 3 lines */
+/* Consolidated, added margin and min heights/widths */
 .search-engine-optimization,
 .online-reputation-management,
 .social-media-marketing {
@@ -140,7 +146,6 @@ p {
 .footer {
     padding: 30px;
     clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
